@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/Frame 2.png">
+    <title>Generate password</title>
+</head>
+<body>
+
+    <main class="main">
+        <div class="password-generate__wrap">
+            <h1>Password Generator</h1>
+            <div class="enter-password__wrap">
+                <span>Enter number of characters</span>
+                <input type="text" name="" id="inputValueCount" value="5" oninput="valueTextInput(value)">
+            </div>
+            <div class="slider-password__wrap">
+                <span>Or use the slider</span>
+                <input type="range" name="" id="inputRange" value="5" min="5" max="25" step="1" oninput="valueRangeInput(value)">
+            </div>
+            <div class="output-password__wrap">
+                <div class="output-title">
+                    <h2>You’r password</h2>
+                    <div class="line"></div>
+                </div>
+                <p class="send_result">Enter length...</p>
+                <div class="output-button__wrap">
+                    <button id="buttonGenerate"><img src="./images/gen.svg" alt="gen"> Generate</button>
+                    <button id="buttonCopy"><img src="./images/copy.svg" alt="copy"></button>
+                </div>
+            </div>
+            <div class="underline"></div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

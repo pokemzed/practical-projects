@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+
+    background-color: #4c4f5a;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+p{
+    font-size: 18px;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-generate__wrap{
+    width: 400px;
+    height: 500px;
+    
+    position: relative;
+    padding: 25px;
+    background-color: #192332;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ввод значения */
+.enter-password__wrap, .slider-password__wrap{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0;
+}
+
+#inputValueCount{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0 10px;
+
+    border: 1px solid #979797;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #fff;
+    
+    transition: .5s;
+    outline: none;
+}
+#inputValueCount:focus{
+    border: 1px solid #4AA3FF;
+}
+
+#inputRange{
+    margin-top: 15px;
+    outline: none;
+}
+
+input[type=range]  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: #ffffff;
+}
+input[type=range]::-webkit-slider-thumb {
+    background: #4AA3FF;
+    border-radius: 50%;
+    cursor: pointer;
+    width:15px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+
+
+
+
+/* Вывод пароля */
+.output-password__wrap{
+    width: 100%;
+    height: 245px;
+
+    position: absolute;
+    left: 0;
+    top: 256px;
+    padding: 25px;
+    background-color: #233146;
+    border-radius: 15px 15px 0px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.output-title{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 90px;
+    height: 2px;
+
+    margin-top: 5px;
+
+    background-color: #95ED6C;
+}
+.send_result{
+    padding: 20px 0;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    
+    position: absolute;
+    left: 0;
+    top: 495px;
+    background-color: #4AA3FF;
+}
+
+.output-button__wrap{
+    display: flex;
+    align-items: center;
+}
+
+#buttonGenerate{
+    padding: 12px 48px;
+    background-color: #95ED6C;
+    border-radius: 5px;
+    color: #233146;
+
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+
+    display: flex;
+    align-items: center;
+}
+#buttonGenerate img{
+    margin-right: 10px;
+}
+#buttonGenerate:hover{
+    background-color: #c1f8a7;
+}
+
+#buttonCopy{
+    margin-left: 10px;
+
+    padding: 11px;
+    background-color: #4AA3FF;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+
+    display: flex;
+    align-items: center;
+}
+#buttonCopy:hover{
+    background-color: #6cb2f8;
+}
