@@ -33,10 +33,22 @@
     padding: 15px;
     background-color: white;
     font-size: 24px;
-    color: red;
 }
 
 .card-text{
     display: flex;
     flex-direction: column;
+}
+
+.review-green{
+    border: 2px solid green;
+    color: green;
+}
+.review-red{
+    border: 2px solid red;
+    color: red;
+}
+.review-orange{
+    border: 2px solid orange;
+    color: orange;
 }
