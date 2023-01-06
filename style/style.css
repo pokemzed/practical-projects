@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+
+/* WRAP */
+.wrapper{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    padding: 15px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 13px;
+}
+.current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+
+/* ICON-BUTTON */
+.icons-arrow{
+    padding: 10px 14px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: .3s;
+}
+.icons-arrow:hover{
+    background-color: #f2f2f2;
+}
+
+/* CALENDAR */
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar .weeks li{
+    font-weight: 600;
+}
+.calendar ul li{
+    width: calc(100%/7);
+}
+
+
+/* DAYS */
+.days{
+    margin-top: 10px;
+}
+.days li{
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.days li:hover{
+    background-color: #f2f2f2;
+}
+.no-active{
+    color: #bdbdbd;
+}
+.days .active{
+    background-color: #333;
+    color: #fff;
+}
+.days .active:hover{
+    background-color: #333;
+}
