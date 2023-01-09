@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+table{
+    width: 450px;
+    border-collapse: collapse;
+
+    margin: 20px 0;
+}
+td,tr{
+    border: 1px solid black;
+}
+table td{
+    width: calc(100%/4);
+    height: 50px;
+    text-align: center;
+
+    cursor: pointer;
+    transition: .2s;
+}
+table td:hover{
+    background-color: #f2f2f2;
+}
+
+#result, #inputText{
+    width: 75%;
+    height: 50px;
+
+    font-size: 24px;
+}
