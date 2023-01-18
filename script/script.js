@@ -13,6 +13,7 @@ const main = async () => {
     const displayList = (arrApi, rowPerPage, page) => {
         //Находим элемент
         const postsEl = document.querySelector('.posts')
+        postsEl.innerHTML = ''
         
         //Обозначаем элементы старта и конца, обрезаем массив
         page--
@@ -52,9 +53,17 @@ const main = async () => {
         liEl.classList.add('pagination__item')
         liEl.innerText = page
 
+        //Подсвечиваем начальную страницу
+        if(currentPage === page) liEl.classList.add('pagination__item--active')
+
+        //Навешиваем обработчик
         liEl.addEventListener('click', () => {
             currentPage = page
             displayList(postsData, rows, currentPage)
+
+            let currentItemLi = document.querySelector('li.pagination__item--active')
+            currentItemLi.classList.remove('pagination__item--active')
+            liEl.classList.add('pagination__item--active')
         })
         return liEl
     }
